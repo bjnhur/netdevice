@@ -1,0 +1,90 @@
+title:            넷디바이스
+email:            jhlee@netdevice.co.kr
+description:      넷디바이스 공식 홈페이지
+author:           Netdevice
+url:              https://bjnhur.github.io
+baseurl:          "/netdevice"
+
+# Setup
+paginate:         5
+paginate_path:    "/posts/page:num/"
+#permalink:       pretty
+permalink:        /:title
+timezone:         Asia/Seoul
+#locale : "ko-KR"
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  # syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   # Use existing pygments syntax highlighting css
+  #   css_class: 'highlight'
+  # # Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Social Profiles
+twitter_username:   
+github_username:    
+facebook_username:  
+instagram_username:  
+linkedin_username:
+
+# Custom vars
+version: 3.0.0
+googleads: false # true / false
+
+github:
+  repository_edit_url: "https://github.com/bjnhur/netdevice/edit/master/"
+
+# head.html 로 이동 
+# Navbar page list
+# nav:
+#   - title: 전체글
+#     url: /posts
+#   - title: 카테고리
+#     url: /category
+#   - title: 태그
+#     url: /tags
+#   - title: 북마크
+#     url: /bookmark
+
+# Gems
+plugins:
+  - jekyll-coffeescript
+  - jekyll-gist
+#  - jekyll-github-metadata
+  - jekyll-paginate
+#  - jekyll-relative-links
+#  - jekyll-optional-front-matter
+#  - jekyll-readme-index
+#  - jekyll-default-layout
+#  - jekyll-titles-from-headings
+
+  - jekyll-feed
+  #- jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  #- jekyll-avatar
+  #- jemoji
+  #- jekyll-mentions
+  #- jekyll-include-cache
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
