@@ -61,64 +61,36 @@ background: "/img/bg-index.jpg"
 
 ---
 
+<a href="{{"/posts" | relative_url }}">전체 프로젝트 보기는 여기로</a>
+
 <div class="row">
+{% for post in site.posts limit:3 %}{% if post.title != null %}
+{% if post.background %}
+{% assign postimg = post.background | prepend: site.baseurl | replace: '//', '/' %}
+{% else %}
+{% assign postimg = "/img/bg-post.jpg" | relative_url %}
+{% endif %}
   <div class="col-md-4 mb-5">
     <div class="card border-0 shadow h-100">
       <img
         class="card-img-top"
-        src=""
+        src="{{postimg}}"
         alt=""
       />
       <div class="card-body">
-        <h4 class="card-title">태양광 모니터링 시스템 개발</h4>
+        <h4 class="card-title">{{ post.title | escape }}</h4>
         <p class="card-text">
-          PC, 스마트폰용 모바일웹<br>
-          Raspberry Pi3 Platform (HTML5, CSS3, PHP, JavaScript, Ajax, ModbusTCP C Programming)
+          <small>{{ post.date | date: "%Y-%m-%d" }}</small><br>
+          {{ post.excerpt | escape }}
         </p>
       </div>
       <div class="card-footer">
-        <a href="/2020/08/26/azure-guardian.html" class="btn btn-primary">상세 설명 보기!</a>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">상세 설명 보기!</a>
       </div>
     </div>
   </div>
-  <div class="col-md-4 mb-5">
-    <div class="card border-0 shadow h-100">
-      <img
-        class="card-img-top"
-        src="https://miro.medium.com/max/700/1*Ue07CQaeBwNvMCaBdImicw.png"
-        alt=""
-      />
-      <div class="card-body">
-        <h4 class="card-title">Data Management</h4>
-        <p class="card-text">
-            IoT 디바이스를 위한 기본적인 데이터 관리 관리를 위한 기능을 제공합니다. 다양한 응용에서 발생하는 데이터를 WIZnet PaaS로 편리하게 관리하세요.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="/2020/08/26/azure-guardian.html" class="btn btn-primary">상세 설명 보기!</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-5">
-    <div class="card border-0 shadow h-100">
-      <img
-        class="card-img-top"
-        src="https://miro.medium.com/max/700/1*rO2vxcn6HEQqfgwQDfiDeg.jpeg"
-        alt=""
-      />
-      <div class="card-body">
-        <h4 class="card-title">User Management</h4>
-        <p class="card-text">
-          IoT 디바이스를 위한 기본적인 사용자 관리를 위한 기능을 제공합니다. Admin, FOTA 이미지 관리, User dashboard customizing 등 다양한 서비스를 받아보세요.
-        </p>
-      </div>
-      <div class="card-footer">
-        <a href="/2020/08/25/wizfi360.html" class="btn btn-primary">상세 설명 보기!</a>
-      </div>
-    </div>
-  </div>
+{% endif %}{% endfor %}
 </div>
-<!-- /.row -->
 
 ## 뉴스 - 외부 소식 소개
 
