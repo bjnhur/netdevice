@@ -2,7 +2,7 @@
 layout: page
 title: Netdevice Home
 description: 방문을 환영합니다. 모바일 앱 개발을 포함한 업무 영역과 프로젝트 내역을 살펴보세요
-background: "/img/paashome.jpg"
+background: "/img/bg-index.jpg"
 ---
 
 
@@ -12,13 +12,20 @@ background: "/img/paashome.jpg"
 
 ---
 
-통신 영역  : TCP, UDP, Mqtt, Modbus TCP, BLE, Bluetooth 3.0, USB 등
+<div class="alert alert-success" markdown="1">
 
-개발 영역  : 안드로이드, 아이폰, 라즈베리파이, 윈도우(Qt)
+**통신 영역** 
+- 프로토콜 : TCP, UDP, Mqtt, Modbus TCP USB 등
+- 무선 통신 : BLE, Bluetooth 3.0, Wi-Fi 등
 
-임베디드 디바이스용 통신 소프트웨어 개발
+**개발 영역**
+- 안드로이드 앱, 아이폰 앱 다수 프로젝트 수행
+- 라즈베리파이 어플리케이션 개발
+- 윈도우(Qt) 프로젝트
 
-## 수행 프로젝트
+</div>
+
+## 임베디드 디바이스용 통신 소프트웨어 개발 수행 프로젝트
 
 ---
 
@@ -59,13 +66,14 @@ background: "/img/paashome.jpg"
     <div class="card border-0 shadow h-100">
       <img
         class="card-img-top"
-        src="https://miro.medium.com/max/700/1*Q_dJ3H8RQ_dS7DMCM5MwTg.png"
+        src=""
         alt=""
       />
       <div class="card-body">
-        <h4 class="card-title">Devie Management</h4>
+        <h4 class="card-title">태양광 모니터링 시스템 개발</h4>
         <p class="card-text">
-          WIZnet은 Dual Ethernet port Azure Sphere Guardian 200(ASG200)을 개발...Azure Sphere 강력한 보안 기능을 탑재한 디바이스 관리
+          PC, 스마트폰용 모바일웹<br>
+          Raspberry Pi3 Platform (HTML5, CSS3, PHP, JavaScript, Ajax, ModbusTCP C Programming)
         </p>
       </div>
       <div class="card-footer">
@@ -112,7 +120,7 @@ background: "/img/paashome.jpg"
 </div>
 <!-- /.row -->
 
-## 프로젝트 상세 소개 - 2
+## 뉴스 - 외부 소식 소개
 
 ### Azure Sphere OTA 시작하기
 
@@ -127,9 +135,3 @@ Global Azure Virtual Korea는 지난 4/25일 한국 Azure 사용자 그룹이 �
 
 [더 읽어보기 &raquo;](https://medium.com/wiznet/wiznet-asg200-in-global-azure-virtual-korea-2020-b1174474c2b9)
 
-
-## 연락처
-
-- ADD  :  경기도 화성시  동탄순환대로 830  SK  V1 센터  1006호
-- TEL  :   010-3577-2752
-- EMIL :  jhlee@netdevice.co.kr
