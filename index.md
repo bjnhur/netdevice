@@ -5,12 +5,9 @@ description: 방문을 환영합니다. 모바일 앱 개발을 포함한 업무
 background: "/img/bg-index.jpg"
 ---
 
-
-참말로 첫번째 랜딩 페이지 만드는 것이 쉬운 일이 아니네요. 디자인 감각이 필요하다나 머라나 ^^;
-
 ## 업무영역
 
----
+넷디바이스가 수행가능한 업무영역을 소개해 드립니다. 
 
 <div class="alert alert-success" markdown="1">
 
@@ -19,13 +16,27 @@ background: "/img/bg-index.jpg"
 - 무선 통신 : BLE, Bluetooth 3.0, Wi-Fi 등
 
 **개발 영역**
-- 안드로이드 앱, 아이폰 앱 다수 프로젝트 수행
-- 라즈베리파이 어플리케이션 개발
-- 윈도우(Qt) 프로젝트
+- 안드로이드 앱 개발
+  - 개발 환경 : Eclipse, Android Studio
+  - 언어 : Java
+- 아이폰 앱 다수 프로젝트 수행
+  - 개발 환경 : Xcode
+  - 언어 : Objective-C (Swift)
+- 라즈베리파이 어플리케이션 Raspberry Pi Program 개발
+  - 언어  : C Language, PHP, HTML5, CSS3, JavaScript, Ajax 등
+- 윈도우(Qt) UI 및 통신 프로그램 개발
+  - 개발 환경 : Qt Creater
+  - 언어 : C++
+- IoT Mqtt Server 개발
+  - Mosquitto Mqtt Broker
+- TCP/IP 통신 칩/모듈 공급 및 기술 지원, 통신 컨설팅
 
 </div>
 
+
 ## 임베디드 디바이스용 통신 소프트웨어 개발 수행 프로젝트
+
+기존에 수행했던 프로젝트를 소개해 드립니다. 몇몇 프로젝트는 앱이나 PC 프로그램의 수행 결과물을 엿볼 수 있습니다.
 
 ---
 
@@ -81,11 +92,11 @@ background: "/img/bg-index.jpg"
         <h4 class="card-title">{{ post.title | escape }}</h4>
         <p class="card-text">
           <small>{{ post.date | date: "%Y-%m-%d" }}</small><br>
-          {{ post.excerpt | escape }}
+          {{ post.excerpt | strip_html | escape }}
         </p>
       </div>
       <div class="card-footer">
-        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">상세 설명 보기!</a>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">더 읽어보기 &raquo;</a>
       </div>
     </div>
   </div>
@@ -94,16 +105,5 @@ background: "/img/bg-index.jpg"
 
 ## 뉴스 - 외부 소식 소개
 
-### Azure Sphere OTA 시작하기
-
-OTA(Over The Air)는 새로운 소프트웨어나 설정을 네트워크를 통해 다양한 방식으로 배포하는 것을 가리킵니다.
-Azure Sphere는 Azure Sphere Security Service(이하 AS3)를 통한 업데이트 서비스를 제공하고 있습니다. AS3는 유지 관리 및 업데이트 등을 사용하기 위해 Azure Sphere 칩과 통신하는 클라우드 기반 서비스입니다.
-
-[더 읽어보기 &raquo;](https://medium.com/wiznet/azure-sphere-ota-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-27097a7a7194)
-
-### WIZnet ASG200 in Global Azure Virtual Korea 2020
-
-Global Azure Virtual Korea는 지난 4/25일 한국 Azure 사용자 그룹이 주최한 Microsoft Azure Cloud 기술 활성화를 위한 무료 기술 커뮤니티 행사입니다.
-
-[더 읽어보기 &raquo;](https://medium.com/wiznet/wiznet-asg200-in-global-azure-virtual-korea-2020-b1174474c2b9)
+새로운 소식이나 신규 프로젝트 수주 건이 생기면 여기에 글이 올라올 예정입니다.
 
