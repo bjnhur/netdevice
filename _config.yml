@@ -2,8 +2,8 @@ title:            넷디바이스
 email:            jhlee@netdevice.co.kr
 description:      넷디바이스 공식 홈페이지
 author:           Netdevice
-url:              https://bjnhur.github.io
-baseurl:          "/netdevice"
+url:              https://home.netdevice.co.kr
+baseurl:          ""
 
 # Setup
 paginate:         5
