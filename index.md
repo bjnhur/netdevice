@@ -77,7 +77,7 @@ background: "/img/bg-index.jpg"
 <div class="row">
 {% for post in site.posts limit:3 %}{% if post.title != null %}
 {% if post.background %}
-{% assign postimg = post.background | prepend: site.baseurl | replace: '//', '/' %}
+{% assign postimg = post.background | relative_url %}
 {% else %}
 {% assign postimg = "/img/bg-post.jpg" | relative_url %}
 {% endif %}
